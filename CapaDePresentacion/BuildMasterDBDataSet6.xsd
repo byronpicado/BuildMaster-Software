@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BuildMasterDBDataSet6" targetNamespace="http://tempuri.org/BuildMasterDBDataSet6.xsd" xmlns:mstns="http://tempuri.org/BuildMasterDBDataSet6.xsd" xmlns="http://tempuri.org/BuildMasterDBDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BuildMasterDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BuildMasterDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CapaDePresentacion.Properties.Settings.GlobalReference.Default.BuildMasterDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VistaProyectosDetalleTableAdapter" GeneratorDataComponentClassName="VistaProyectosDetalleTableAdapter" Name="VistaProyectosDetalle" UserDataComponentName="VistaProyectosDetalleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BuildMasterDBConnectionString (Settings)" DbObjectName="BuildMasterDB.dbo.VistaProyectosDetalle" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Código, Descripción_del_Proyecto, Cliente, Responsable_de_Proyecto, Estado, Duración_días, Descripción_resumida, Progreso_actual_del_proyecto FROM dbo.VistaProyectosDetalle</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Código" DataSetColumn="Código" />
+              <Mapping SourceColumn="Descripción_del_Proyecto" DataSetColumn="Descripción_del_Proyecto" />
+              <Mapping SourceColumn="Cliente" DataSetColumn="Cliente" />
+              <Mapping SourceColumn="Responsable_de_Proyecto" DataSetColumn="Responsable_de_Proyecto" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+              <Mapping SourceColumn="Duración_días" DataSetColumn="Duración_días" />
+              <Mapping SourceColumn="Descripción_resumida" DataSetColumn="Descripción_resumida" />
+              <Mapping SourceColumn="Progreso_actual_del_proyecto" DataSetColumn="Progreso_actual_del_proyecto" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BuildMasterDBDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="BuildMasterDBDataSet6" msprop:Generator_DataSetName="BuildMasterDBDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VistaProyectosDetalle" msprop:Generator_RowEvHandlerName="VistaProyectosDetalleRowChangeEventHandler" msprop:Generator_RowDeletedName="VistaProyectosDetalleRowDeleted" msprop:Generator_RowDeletingName="VistaProyectosDetalleRowDeleting" msprop:Generator_RowEvArgName="VistaProyectosDetalleRowChangeEvent" msprop:Generator_TablePropName="VistaProyectosDetalle" msprop:Generator_RowChangedName="VistaProyectosDetalleRowChanged" msprop:Generator_RowChangingName="VistaProyectosDetalleRowChanging" msprop:Generator_TableClassName="VistaProyectosDetalleDataTable" msprop:Generator_RowClassName="VistaProyectosDetalleRow" msprop:Generator_TableVarName="tableVistaProyectosDetalle" msprop:Generator_UserTableName="VistaProyectosDetalle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Código" msprop:Generator_ColumnPropNameInRow="Código" msprop:Generator_ColumnPropNameInTable="CódigoColumn" msprop:Generator_ColumnVarNameInTable="columnCódigo" msprop:Generator_UserColumnName="Código">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripción_del_Proyecto" msprop:Generator_ColumnPropNameInRow="Descripción_del_Proyecto" msprop:Generator_ColumnPropNameInTable="Descripción_del_ProyectoColumn" msprop:Generator_ColumnVarNameInTable="columnDescripción_del_Proyecto" msprop:Generator_UserColumnName="Descripción_del_Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cliente" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Cliente" msprop:Generator_ColumnPropNameInTable="ClienteColumn" msprop:Generator_ColumnVarNameInTable="columnCliente" msprop:Generator_UserColumnName="Cliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="201" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Responsable_de_Proyecto" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Responsable_de_Proyecto" msprop:Generator_ColumnPropNameInTable="Responsable_de_ProyectoColumn" msprop:Generator_ColumnVarNameInTable="columnResponsable_de_Proyecto" msprop:Generator_UserColumnName="Responsable_de_Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="201" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_UserColumnName="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Duración_días" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Duración_días" msprop:Generator_ColumnPropNameInTable="Duración_díasColumn" msprop:Generator_ColumnVarNameInTable="columnDuración_días" msprop:Generator_UserColumnName="Duración_días" type="xs:int" minOccurs="0" />
+              <xs:element name="Descripción_resumida" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Descripción_resumida" msprop:Generator_ColumnPropNameInTable="Descripción_resumidaColumn" msprop:Generator_ColumnVarNameInTable="columnDescripción_resumida" msprop:Generator_UserColumnName="Descripción_resumida" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="33" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Progreso_actual_del_proyecto" msprop:Generator_ColumnPropNameInRow="Progreso_actual_del_proyecto" msprop:Generator_ColumnPropNameInTable="Progreso_actual_del_proyectoColumn" msprop:Generator_ColumnVarNameInTable="columnProgreso_actual_del_proyecto" msprop:Generator_UserColumnName="Progreso_actual_del_proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
